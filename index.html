@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>SKY SHOPI- TIENDA DE ROPA </title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header class="header">
+      <section class="h1">
+        <h1>FINAL SALE, OFERTAS DESDE EL 50% EN PRENDAS SELECIONADAS</h1> 
+      </section>
+      <nav>
+        <ul class="nav-rigth-section">
+          <li class="logosky">
+            <a href="#"> <img src="/src/imagenes/logosky.png" alt="logosky"/> </a></li>
+          <li><a href="#"> INICIO </a></li> 
+          <li><a href="#"> POLOS </a></li>
+          <li><a href="#"> PANTALÓN </a></li>
+          <li><a href="#"> POLERAS </a></li>
+          <div class="main-input-container"> 
+            <input type="text"> 
+            <spam class="search-icon"> 
+            </spam>
+          </div>
+          <li class="logosky">
+            <a href="#"><img src="/src/imagenes/logosky1.png" alt="logosky"/> </a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>    
+ <!--SECCIÓN IMG Y OCPION DE COMPRAS----------------> 
+ <div class="contenedor1">
+      <section class="portada"><img src="/src/imagenes/fondo.png" alt="new collection" /></section>
+      <section class="new-ingresos"><p>NUEVOS INGRESOS</p></section>
+      <section class="buton-selection">
+        <div class="election-img1">
+          <img  src="/src/imagenes/pant.jpeg" alt="pantalón"/> 
+          <p>PANT UNISEX</p>
+          <p class="precio">s/ 90.00</p>
+          <button class="comprar" id="prod1">SELECCIONAR</button>
+        </div>
+        <div class="election-img2">
+          <img  src="/src/imagenes/opcion2.jpeg" alt="pantalón"/> 
+          <p>POLO OVERSIDE</p>
+          <p class="precio">s/ 70.00</p>
+          <button class="comprar" id="prod2">SELECCIONAR</button>
+        </div>
+        <div class="election-img3">
+          <img  src="/src/imagenes/opcion3.jpeg" alt="pantalón"/>
+          <p>HODDY NICE</p>
+          <p class="precio">s/ 150.00</p>
+          <button class="comprar" id="prod3">SELECCIONAR</button>
+        </div>
+      </section>
+ </div>
+
+  <div class="contenedor2">
+    <form id="formulario-tarjeta" class="formulario-tarjeta">
+        <div class="numeroTarjeta">
+          <label for="inputNumero"> Numero de tarjeta </label>
+          <input type="text" class="inputNumero" id="inputNumero" maxlength="16">
+        </div>
+        <div class="nombre">
+          <label for="inputNombre"> Nombre</label>
+          <input type="text" id="inputNombre" >
+        </div>
+        <div class="flexbok">
+          <div class="fecha">
+            <label for="inputFecha">fecha </label>
+            <input type="text" id="inputFecha">
+          </div>
+          <div class="Cvv">
+            <label for="inputCvv">Cvv </label>
+            <input type="text" id="inputCvv" maxlength="3">
+          </div>
+        </div>
+        <button type="submit" class="btn-comprar" id="comprar"> COMPRAR</button>
+      </form>
+    </div>
+<!-- ---------------- -M O D A L- --------------->
+  <section class="modal">
+      <div class="modal-container">
+        <img class="modal_img" src="imagenes/tarjetaValida.png" alt="tarjetavalida">
+        <h2 class="modal_Title">GRACIAS POR TU COMPRA</h2>
+        <p class="modal_paragraph">Feliciades tu número de tarjeta es valida, tu orden de compra fue emitida. Tu pedido te estara llegando en un maximo de 3 días hábiles.</p>
+        <a href="#" class="modal_clouse">CERRAR</a>
+      </div> 
+  </section>
+  <section class="modal-tarjeta-invalid">
+    <div class="modal-invalid">
+      <img class="modal_imginvalid" src="imagenes/tarjetainvalida.png" alt="tarjetavalida">
+      <h2 class="modal_Titleinvalid">NUMERO DE TARJETA INVALIDA</h2>
+      <p class="modal_paragraphinvalid">Por favor ingrese un número de tarjeta valida, para poder continuar con su compra.</p>
+      <a href="#" class="modal_clouseinvalid">CERRAR</a>
+    </div> 
+  </section>
+  <section class="modalIncompleto">
+    <div class="modal-Incompleto">
+      <img class="modal_imgIncompleto" src="imagenes/tarjetaAzul2.png" alt="tarjetavalida">
+      <h2 class="modal_TitleIncompleto">DATOS INCOMPLETOS</h2>
+      <p class="modal_paragraphIncompleto">Por favor ingrese su número de tarjeta, para poder continuar con su compra </p>
+      <a href="#" class="modal_clouseIncompleto">CERRAR</a>
+    </div> 
+  </section>
+
+    </main>
+
+    <footer>
+      <p id="footerMovies" class="footerMovies">Copyright &copy; Sefani Peñaranda. All rights reserved.</p>
+    </footer>
+    <script src="index.js" type="module"></script>
+  </body>
+</html>
